@@ -6,10 +6,10 @@ public class Atividade_10 {
 
 	public static void main(String[] args) {
 		
-		Locale.setDefault(Locale.US);
+	Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-		double A = sc.nextDouble();
+	double A = sc.nextDouble();
         double B = sc.nextDouble();
         double C = sc.nextDouble();
         final double pi = 3.14159;
