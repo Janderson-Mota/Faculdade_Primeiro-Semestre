@@ -13,7 +13,7 @@ public class Atividade_2 {
 		double area;
 		final double pi = 3.14159;
 
-     	area = pi * (raio * raio);
+		area = pi * (raio * raio);
 
 		System.out.printf("A = %.4f%n", area);
 

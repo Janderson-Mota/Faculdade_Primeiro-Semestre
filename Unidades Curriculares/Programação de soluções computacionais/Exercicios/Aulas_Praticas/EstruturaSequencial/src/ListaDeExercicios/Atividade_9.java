@@ -13,7 +13,7 @@ public class Atividade_9 {
 		double volume;
 		final double pi = 3.14159;
 
-     	volume = pi * ((4.0 / 3.0) * (raio * raio *raio));
+		volume = pi * ((4.0 / 3.0) * (raio * raio * raio));
 
 		System.out.printf("VOLUME = %.3f%n", volume);
 

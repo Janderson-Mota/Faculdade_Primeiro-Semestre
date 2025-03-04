@@ -16,7 +16,7 @@ public class Atividade_5 {
 		DIFERENCA = (A * B) - (C * D);
 		System.out.println("DIFERENCA = " + DIFERENCA);
 
-     	sc.close();
+		sc.close();
 
 	}
 
