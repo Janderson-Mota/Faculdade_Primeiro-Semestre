@@ -25,7 +25,6 @@ public class Atividade_10 {
 		System.out.printf("TRAPEZIO: %.3f%n", areaTrapezio);
 		System.out.printf("QUADRADO: %.3f%n", areaQuadrado);
 		System.out.printf("RETANGULO: %.3f%n", areaRetangulo);
-		
 
 		sc.close();
 	}
