@@ -5,7 +5,7 @@ public class Atividade_4 {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+    	Scanner sc = new Scanner(System.in);
 
 		int X, Y, PROD;
 
@@ -17,6 +17,6 @@ public class Atividade_4 {
 
 		sc.close();
 
-	}
+     }
 
 }

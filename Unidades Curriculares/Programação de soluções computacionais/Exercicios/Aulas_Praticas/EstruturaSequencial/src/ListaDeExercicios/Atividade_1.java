@@ -7,7 +7,7 @@ public class Atividade_1 {
 			
 			Scanner sc = new Scanner(System.in);
 			
-			int A, B, X;
+     		int A, B, X;
 			
 			A = sc.nextInt();
 			B = sc.nextInt();

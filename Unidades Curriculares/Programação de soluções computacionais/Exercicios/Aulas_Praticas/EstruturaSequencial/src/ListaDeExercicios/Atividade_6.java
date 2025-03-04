@@ -9,14 +9,14 @@ public class Atividade_6 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int numeroFuncionario = sc.nextInt();
+    	int numeroFuncionario = sc.nextInt();
 		int	horasTrabahadas = sc.nextInt();
 		double valorHorasFuncionario= sc.nextDouble();
 		
 		double salarioFuncionario = (horasTrabahadas * valorHorasFuncionario);
 		
-		System.out.println("NUMBER = " + numeroFuncionario);
-		System.out.printf("SALARY =  %.2f%n", salarioFuncionario);
+     	System.out.println("NUMBER = " + numeroFuncionario);
+		System.out.printf("SALARY = U$ %.2f%n", salarioFuncionario);
 		
 
 		sc.close();
