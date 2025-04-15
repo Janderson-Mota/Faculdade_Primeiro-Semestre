@@ -1,0 +1,63 @@
+package entrega;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class entregador {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double totalDistancia = 0.0;
+		double distancia = 0.0;
+		double mediaKm = 0.0;
+
+		int entregas = 0;
+		int contador = 0;
+		int funcionarios = 20;
+
+		String nome;
+
+		for (int entregadores = 1; entregadores <= 20; entregadores++) {
+
+			System.out.println();
+			System.out.println("Você é o número: " + entregadores);
+			System.out.println();
+
+			System.out.print("Digite seu nome: ");
+			nome = sc.next();
+
+			System.out.print("Digite o total de entregas: ");
+			entregas = sc.nextInt();
+
+			System.out.print("Digite o total da distância em km: R$ ");
+			distancia = sc.nextDouble();
+			totalDistancia = distancia * 20.00;
+
+			System.out.println();
+			System.out.printf("O total a receber: R$ R$ %.2f%n", totalDistancia);
+
+			mediaKm = distancia / entregas;
+			System.out.printf("A média pecorrida nas entregas em km: R$ %.2f%n", mediaKm);
+
+			if (entregas >= 15) {
+				System.out.println("Entregador concluiu meta!");
+				contador++;
+			} else {
+				System.out.println("Entregador não concluiu meta!");
+			}
+		}
+
+		System.out.println();
+		System.out.println(contador + " entregadores concluiram a média");
+
+		int totalNegativo = funcionarios - contador;
+
+		System.out.println(totalNegativo + " entregadores não concluiram a média");
+
+		sc.close();
+	}
+
+}

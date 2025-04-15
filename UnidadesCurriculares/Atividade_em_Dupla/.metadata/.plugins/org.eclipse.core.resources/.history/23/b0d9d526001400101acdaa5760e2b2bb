@@ -1,0 +1,42 @@
+package entrega;
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class entregador {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double totalDistancia= 0.0;
+		double distancia = 0.0;
+		int metas = 0;
+		String nome;
+		
+		for (int entregadores = 0; entregadores>20; entregadores++) {
+			
+			//System.out.println("");
+			nome= sc.next();
+		
+			distancia = sc.nextDouble();
+			totalDistancia = totalDistancia * 20.00;
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

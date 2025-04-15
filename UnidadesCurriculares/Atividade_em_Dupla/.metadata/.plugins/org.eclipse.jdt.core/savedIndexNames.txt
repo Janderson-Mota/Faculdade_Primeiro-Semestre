@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Windows 11\OneDrive\Área de Trabalho\Atividade_em_Dupla\.metadata\.plugins\org.eclipse.jdt.core
+531283957.index
+1865797976.index
+3608370167.index
