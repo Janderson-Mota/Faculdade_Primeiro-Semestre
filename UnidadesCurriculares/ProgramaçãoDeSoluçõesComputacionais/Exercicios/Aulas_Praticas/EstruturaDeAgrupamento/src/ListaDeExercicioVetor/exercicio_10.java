@@ -1,7 +1,6 @@
 package ListaDeExercicioVetor;
 
 import java.util.Locale;
-import java.util.Random;
 import java.util.Scanner;
 
 public class exercicio_10 {
@@ -10,7 +9,7 @@ public class exercicio_10 {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Random aleatorio = new Random();
+		
 
 		System.out.print("Digite um número para ver a tabuada: ");
 		int numero = sc.nextInt();
