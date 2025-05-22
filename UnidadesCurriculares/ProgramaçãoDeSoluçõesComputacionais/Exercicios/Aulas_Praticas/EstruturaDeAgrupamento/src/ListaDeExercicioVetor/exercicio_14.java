@@ -14,6 +14,7 @@ public class exercicio_14 {
         int n = sc.nextInt();
 
         int[] etapas = new int[n];
+        
         int tempoPorEtapa = 5;
         int tempoTotal = 0;
 
