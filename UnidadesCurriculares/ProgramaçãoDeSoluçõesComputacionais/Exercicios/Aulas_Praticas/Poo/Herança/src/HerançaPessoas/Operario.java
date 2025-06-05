@@ -2,7 +2,6 @@ package HerançaPessoas;
 
 public class Operario extends Empregado{
 	
-	public class Operario extends Funcionario {
 	    private double valorProducao;
 	    private double comissao;
 
@@ -12,9 +11,9 @@ public class Operario extends Empregado{
 	        this.comissao = comissao;
 	    }
 
-	    @Override
+	   
 	    public double calcularSalario() {
 	        return salarioBase + (valorProducao * comissao);
-	    }
+	    
 	}
 }

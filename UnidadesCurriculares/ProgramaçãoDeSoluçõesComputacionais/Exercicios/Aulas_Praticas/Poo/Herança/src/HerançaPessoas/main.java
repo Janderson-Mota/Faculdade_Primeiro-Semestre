@@ -6,19 +6,15 @@ public class main {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		        Operario operario = new Operario("João", "123456789", "Rua A", "99999-9999", "Produção", 1500, 20000, 0.05);
+		        Vendedor vendedor = new Vendedor("Ana", "987654321", "Rua B", "98888-8888", "Vendas", 1200, 30000, 0.10);
+		        Administrador admin = new Administrador("Carlos", "1122334455", "Rua C", "97777-7777", "Administração", 2500, "500");
 
-		//fornecedor 
-		
-		System.out.println("Teste classe fornecedor\n");
-
-		Funcionario empresa_1 = new Funcionario("Cemig", "(31) 98345-7470", "R. Você é bobo, nº 0", 5000.00, 4000.00);
-
-		System.out.println("Nome: " + empresa_1.getNome() + "\nTelefone: " + empresa_1.getTelefone() + "\nEndereco: "
-				+ empresa_1.getEndereco() + "\nValor Credito: " + empresa_1.getValorCredito() + "\nValor Divida: "
-				+ empresa_1.getValorDivida());
-		
-		System.out.println("\nSaldo Final: " + empresa_1.saldo());
+		        System.out.println("Salário do Operário: R$ " + operario.calcularSalario());
+		        System.out.println("Salário do Vendedor: R$ " + vendedor.calcularSalario());
+		        System.out.println("Salário do Administrador: R$ " + admin.calcularSalario());
+		   
+	
 
 	}
 

@@ -2,46 +2,18 @@ package HerançaPessoas;
 
 public class Funcionario extends Pessoas {
 
-	private double valorCredito = 0.0;
-	private double valorDivida = 0.0;
-	
-	
+	private double valorVendas;
+    private double comissao;
 
-	public Funcionario() { super(); }
+    public Vendedor(String nome, String cpf, String endereco, String telefone, String setor, double salarioBase, double valorVendas, double comissao) {
+        super(nome, cpf, endereco, telefone, setor, salarioBase);
+        this.valorVendas = valorVendas;
+        this.comissao = comissao;
+    }
 
-	public Funcionario(String nome,  String telefone, String endereco, double valorCredito, double valorDivida) {
-		super(nome, endereco, telefone);
-		this.valorCredito = valorCredito;
-		this.valorDivida = valorDivida;
-
-	}
-
-	public Funcionario(String nome, String telefone, double valorCredito, double valorDivida) {
-		super(nome, telefone);
-		this.valorCredito = valorCredito;
-		this.valorDivida = valorDivida;
-
-	}
-	
-
-	public double getValorCredito() {
-		return valorCredito;
-	}
-
-	public void setValorCredito(double valorCredito) {
-		this.valorCredito = valorCredito;
-	}
-
-	public double getValorDivida() {
-		return valorDivida;
-	}
-
-	public void setValorDivida(double valorDivida) {
-		this.valorDivida = valorDivida;
-	}
-
-	public double saldo() {
-		return valorCredito - valorDivida;
-	}
+    @Override
+    public double calcularSalario() {
+        return salarioBase + (valorVendas * comissao);
+    }
 
 }
