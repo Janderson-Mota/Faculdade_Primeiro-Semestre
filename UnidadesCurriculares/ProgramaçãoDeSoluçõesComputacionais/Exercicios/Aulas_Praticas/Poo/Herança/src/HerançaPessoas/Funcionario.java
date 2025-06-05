@@ -1,22 +1,22 @@
 package HerançaPessoas;
 
-public class Fornecedor extends Pessoas {
+public class Funcionario extends Pessoas {
 
-	private double valorCredito =0.0;
-	private double valorDivida =0.0;
+	private double valorCredito = 0.0;
+	private double valorDivida = 0.0;
 	
 	
 
-	public Fornecedor() { super(); }
+	public Funcionario() { super(); }
 
-	public Fornecedor(String nome, String endereco, String telefone, double valorCredito, double valorDivida) {
+	public Funcionario(String nome,  String telefone, String endereco, double valorCredito, double valorDivida) {
 		super(nome, endereco, telefone);
 		this.valorCredito = valorCredito;
 		this.valorDivida = valorDivida;
 
 	}
 
-	public Fornecedor(String nome, String telefone, double valorCredito, double valorDivida) {
+	public Funcionario(String nome, String telefone, double valorCredito, double valorDivida) {
 		super(nome, telefone);
 		this.valorCredito = valorCredito;
 		this.valorDivida = valorDivida;
